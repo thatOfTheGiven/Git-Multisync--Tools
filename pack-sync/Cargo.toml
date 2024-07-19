@@ -1,0 +1,22 @@
+[package]
+name = "pack-sync"
+version = "1.0.0"
+edition = "2021"
+about = "Provide git objects export and inport tooling"
+long_about = "Using the existing git pack tooling to export the content from one site to another"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.22.0"
+chrono = "0.4.31"
+clap = { version = "4.4.2", features = ["cargo"] }
+grep-regex = "0.1.11"
+grep-searcher = "0.1.11"
+regex = "1.10.3"
+serde_json = "1.0.117"
+substring = "1.4.5"
+yaml-rust = "0.4.5"
+shared = {path = "../shared"}
+git = {path = "../git"}
+
